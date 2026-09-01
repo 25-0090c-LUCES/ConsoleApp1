@@ -1,4 +1,5 @@
-﻿namespace ConsoleApp1
+﻿using System.Threading;
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -129,7 +130,6 @@ Press any key to return to the menu...
             Console.WriteLine("================================");
             Console.WriteLine("          CREATE TEAMS");
             Console.WriteLine("================================");
-            Console.WriteLine("Create 3 teams with 2 players each.");
 
             for (int team = 0; team < 3; team++)
             {
