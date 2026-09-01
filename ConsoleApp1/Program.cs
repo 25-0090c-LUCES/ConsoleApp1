@@ -42,7 +42,7 @@ namespace ConsoleApp1
                 if (!int.TryParse(input, out int choice))
                 {
                     Console.WriteLine("Please enter a number.");
-                    Console.ReadKey();
+                    Thread.Sleep(1200);
                     continue;
                 }
 
@@ -58,7 +58,7 @@ namespace ConsoleApp1
                         break;
                     case 3:
                         Console.Clear();
-                        Console.WriteLine("Thank you for playing Christmas Charades. Goodbye!");
+                        Console.WriteLine("Thank you for playing ThreesMasCharade. Goodbye!");
                         Console.ReadKey();
                         running = false;
                         break;
@@ -116,7 +116,7 @@ SCORING
 
 ========================================
 
-Press any key to return to the menu...
+Press any key to return to the menu.
 ");
             Console.ReadKey();
         }
@@ -173,7 +173,7 @@ Press any key to return to the menu...
                 Console.WriteLine("Player 2: " + teams[team, 1]);
             }
             Console.WriteLine();
-            Console.WriteLine("Press any key to start the game...");
+            Console.WriteLine("Press any key to start the game.");
             Console.ReadKey();
 
 
@@ -245,7 +245,7 @@ Press any key to return to the menu...
             Console.WriteLine("Third:  Team " + (teamOrder[2] + 1));
 
             Console.WriteLine();
-            Console.WriteLine("Press any key to begin...");
+            Console.WriteLine("Press any key to begin.");
             Console.ReadKey();
 
             while (true)
@@ -274,7 +274,7 @@ Press any key to return to the menu...
                         Console.WriteLine("❄️ Better luck next round!");
 
                         Console.WriteLine();
-                        Console.WriteLine("Press any key to continue...");
+                        Console.WriteLine("Press any key to continue.");
                         Console.ReadKey();
 
                         freezeActive = false;
@@ -297,7 +297,7 @@ Press any key to return to the menu...
                     Console.WriteLine("Current Score: " + scores[team]);
 
                     Console.WriteLine();
-                    Console.WriteLine("Press any key to continue...");
+                    Console.WriteLine("Press any key to continue.");
                     Console.ReadKey();
 
                     bool hasPowerUp = false;
@@ -347,7 +347,7 @@ Press any key to return to the menu...
 
                             if (!int.TryParse(powerInput, out int powerChoice))
                             {
-                                Console.WriteLine("Please enter 1 or 2.");
+                                Console.WriteLine("Please enter a number.");
                                 continue;
                             }
 
@@ -363,7 +363,7 @@ Press any key to return to the menu...
                             }
                             else
                             {
-                                Console.WriteLine("Invalid choice. Please enter 1 or 2.");
+                                Console.WriteLine("Invalid number choice. Please enter 1 or 2.");
                             }
                         }
 
@@ -380,8 +380,10 @@ Press any key to return to the menu...
                             Console.ResetColor();
 
                             Console.WriteLine();
-                            Console.WriteLine("Eto na ang halimaw!" + currentPowerUp);
-
+                            Console.WriteLine("Here comes Santa Claus!");
+                            Console.WriteLine("Here comes Santa Claus!");
+                            Console.WriteLine();
+                            Console.WriteLine(currentPowerUp);
                             if (currentPowerUp == "Double Points")
                             {
                                 Console.WriteLine();
@@ -403,7 +405,7 @@ Press any key to return to the menu...
                             }
 
                             Console.WriteLine();
-                            Console.WriteLine("Press any key to continue...");
+                            Console.WriteLine("Press any key to continue.");
                             Console.ReadKey();
                         }
                         else
@@ -456,7 +458,7 @@ Press any key to return to the menu...
                     Console.WriteLine("Act it out!");
 
                     Console.WriteLine();
-                    Console.WriteLine("Press any key when finished...");
+                    Console.WriteLine("Press any key when finished.");
                     Console.ReadKey();
                     bool guessed = false;
 
@@ -483,7 +485,7 @@ Press any key to return to the menu...
                         if (!int.TryParse(guessInput, out int guessChoice))
                         {
                             Console.WriteLine();
-                            Console.WriteLine("Invalid number selection. Please enter 1 or 2.");
+                            Console.WriteLine("Please enter a number.");
                             Thread.Sleep(1300);
                             continue;
                         }
@@ -501,7 +503,7 @@ Press any key to return to the menu...
                         else
                         {
                             Console.WriteLine();
-                            Console.WriteLine("Invalid choice. Please enter 1 or 2.");
+                            Console.WriteLine("Invalid number choice. Please enter 1 or 2.");
                             Thread.Sleep(1300);
 
                         }
@@ -527,7 +529,7 @@ Press any key to return to the menu...
                         Console.WriteLine("You get another charade!");
 
                         Console.WriteLine();
-                        Console.WriteLine("Press any key to continue...");
+                        Console.WriteLine("Press any key to continue.");
                         Console.ReadKey();
 
                         while (true)
@@ -561,7 +563,7 @@ Press any key to return to the menu...
                         Console.WriteLine("Act it out!");
 
                         Console.WriteLine();
-                        Console.WriteLine("Press any key when finished...");
+                        Console.WriteLine("Press any key when finished.");
                         Console.ReadKey();
 
                       
@@ -589,7 +591,7 @@ Press any key to return to the menu...
                             if (!int.TryParse(secondInput, out int secondChoice))
                             {
                                 Console.WriteLine();
-                                Console.WriteLine("Invalid number choice. Please enter 1 or 2.");
+                                Console.WriteLine("Please enter a number.");
                                 Thread.Sleep(1300);
                                 continue;
                             }
@@ -607,7 +609,7 @@ Press any key to return to the menu...
                             else
                             {
                                 Console.WriteLine();
-                                Console.WriteLine("Invalid Choice. Please enter a number.");
+                                Console.WriteLine("Invalid number choice. Please enter 1 or 2.");
                                 Thread.Sleep(1300);
 
                             }
@@ -698,7 +700,7 @@ Press any key to return to the menu...
                         Console.WriteLine("Congratulations Team " + (team + 1) + "!");
 
                         Console.WriteLine();
-                        Console.WriteLine("Press any key to return to the main menu...");
+                        Console.WriteLine("Press any key to return to the main menu.");
                         Console.ReadKey();
 
                         return;
@@ -706,7 +708,7 @@ Press any key to return to the menu...
 
                     Console.WriteLine();
                     Console.WriteLine("Proceeding to the  next team.");
-                    Thread.Sleep(1400);
+                    Thread.Sleep(1500);
                 }
             }
         }
