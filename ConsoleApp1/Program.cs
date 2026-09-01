@@ -11,8 +11,8 @@ namespace ConsoleApp1
             {
                 Console.Clear();
 
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine(@"
+               
+                Console.Write(@"
          
          ████████╗██╗  ██╗██████╗ ███████╗███████╗███████╗███╗   ███╗ █████╗ ███████╗
          ╚══██╔══╝██║  ██║██╔══██╗██╔════╝██╔════╝██╔════╝████╗ ████║██╔══██╗██╔════╝
@@ -21,6 +21,10 @@ namespace ConsoleApp1
             ██║   ██║  ██║██║  ██║███████╗███████╗███████║██║ ╚═╝ ██║██║  ██║███████║
             ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝
                                                                                 
+                 
+");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(@"  
                     ██████╗██╗  ██╗ █████╗ ██████╗  █████╗ ██████╗ ███████╗
                    ██╔════╝██║  ██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
                    ██║     ███████║███████║██████╔╝███████║██║  ██║█████╗  
@@ -34,7 +38,7 @@ namespace ConsoleApp1
                 Console.WriteLine("1. Start");
                 Console.WriteLine("2. Instructions");
                 Console.WriteLine("3. Exit");
-
+                Console.WriteLine();
                 Console.Write("Enter number of choice: ");
 
                 string input = Console.ReadLine();
