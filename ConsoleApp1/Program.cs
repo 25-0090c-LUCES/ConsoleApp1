@@ -132,7 +132,6 @@
 
             Random random = new Random();
 
-            // Randomize team order
             for (int i = teamOrder.Count - 1; i > 0; i--)
             {
                 int j = random.Next(i + 1);
@@ -142,7 +141,6 @@
                 teamOrder[j] = temp;
             }
 
-            // Display team order
             Console.Clear();
 
             Console.WriteLine("================================");
