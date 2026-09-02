@@ -218,8 +218,7 @@ Press any key to return to the menu.
                 "Freeze"
             };
             int[] scores = new int[3];
-            Random random = new Random();
-            bool freezeActive = false;
+            Random random = new Random();       
             List<int> teamOrder = new List<int>
             {
                 0,
@@ -251,7 +250,7 @@ Press any key to return to the menu.
             Console.WriteLine();
             Console.WriteLine("Press any key to begin.");
             Console.ReadKey();
-
+            bool freezeActive = false;
             while (true)
             {
                 for (int i = 0; i < teamOrder.Count; i++)
